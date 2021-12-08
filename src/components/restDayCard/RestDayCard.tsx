@@ -3,7 +3,7 @@ import { Grid, Typography } from '@material-ui/core';
 import useStyles from './styles';
 import { DateRangeRounded } from '@material-ui/icons';
 
-interface IWorkoutCard {
+interface IRestDayCard {
 	day:
 		| 'Måndag'
 		| 'Tisdag'
@@ -14,7 +14,7 @@ interface IWorkoutCard {
 		| 'Söndag';
 }
 
-export const RestDayCard = ({ day }: IWorkoutCard) => {
+export const RestDayCard = ({ day }: IRestDayCard) => {
 	const classes = useStyles();
 	return (
 		<Grid container item className={classes.container}>

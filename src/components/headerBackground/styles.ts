@@ -9,6 +9,6 @@ export default makeStyles((theme) => ({
 		borderBottomRightRadius: 60,
 		position: 'absolute',
 		top: 0,
-		zIndex: 0,
+		zIndex: 10,
 	},
 }));

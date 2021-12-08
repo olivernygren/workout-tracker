@@ -5,7 +5,7 @@ export default makeStyles(() => ({
 		position: 'absolute',
 		top: 34,
 		left: 20,
-		zIndex: 1,
+		zIndex: 11,
 		textTransform: 'capitalize',
 	},
 }));

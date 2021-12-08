@@ -13,11 +13,12 @@ interface IWorkoutCard {
 		| 'Torsdag'
 		| 'Fredag'
 		| 'Lördag'
-		| 'Söndag';
+		| 'Söndag'
+		| string;
 	path: string;
-	exercises: number;
-	sets: number;
-	reps: number;
+	exercises?: number;
+	sets?: number;
+	reps?: number;
 }
 
 export const WorkoutCard = ({
