@@ -5,6 +5,7 @@ export default makeStyles((theme) => ({
 		backgroundColor: theme.palette.primary.light,
 		height: 90,
 		width: '100%',
+		borderRadius: 0,
 		borderBottomRightRadius: 60,
 		position: 'absolute',
 		top: 0,

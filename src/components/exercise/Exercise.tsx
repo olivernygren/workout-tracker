@@ -1,11 +1,10 @@
-import React from 'react';
-import { Grid, Paper, Typography } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 
 import useStyles from './styles';
 import { DateRangeRounded } from '@material-ui/icons';
 
 export const Exercise = () => {
-	const classes = useStyles();
+	// const classes = useStyles();
 	return (
 		<Grid container item>
 			<Grid container item>

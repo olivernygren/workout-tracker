@@ -1,5 +1,4 @@
-import React from 'react';
-import { Button, Grid, Paper, Typography } from '@material-ui/core';
+import { Button, Grid, Typography } from '@material-ui/core';
 
 import useStyles from './styles';
 import { DateRangeRounded, ChevronRightRounded } from '@material-ui/icons';
