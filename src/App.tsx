@@ -2,8 +2,10 @@ import { ThemeProvider } from '@material-ui/core';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
 import './index.css';
+import './App.css';
 import { routes } from './routes';
 import { theme } from './theme';
+import { Menu } from './components';
 
 function App() {
 	return (
@@ -14,6 +16,7 @@ function App() {
 						<Route path={route} element={element} key={key} />
 					))}
 				</Routes>
+				<Menu />
 			</BrowserRouter>
 		</ThemeProvider>
 	);

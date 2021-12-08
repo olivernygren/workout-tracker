@@ -19,43 +19,53 @@ export const theme = createTheme({
 		fontWeightRegular: 400,
 		h1: {
 			fontWeight: 600,
-			fontSize: 80,
+			fontSize: 40,
+			color: '#fff',
 		},
 		h2: {
 			fontWeight: 600,
-			fontSize: 66,
+			fontSize: 34,
+			color: '#fff',
 		},
 		h3: {
 			fontWeight: 700,
-			fontSize: 48,
+			fontSize: 30,
+			color: '#fff',
 		},
 		h4: {
 			fontWeight: 600,
-			fontSize: 40,
+			fontSize: 26,
+			color: '#fff',
 		},
 		h5: {
-			fontWeight: 500,
-			fontSize: 32,
+			fontWeight: 600,
+			fontSize: 24,
+			color: '#fff',
 		},
 		h6: {
-			fontWeight: 500,
-			fontSize: 20,
+			fontWeight: 600,
+			fontSize: 22,
+			color: '#fff',
 		},
 		subtitle1: {
-			fontWeight: 500,
+			fontWeight: 400,
 			fontSize: 18,
+			color: '#fff',
 		},
 		subtitle2: {
-			fontWeight: 500,
+			fontWeight: 400,
 			fontSize: 18,
+			color: '#fff',
 		},
 		body1: {
-			fontWeight: 400,
+			fontWeight: 300,
 			fontSize: 16,
+			color: '#fff',
 		},
 		body2: {
-			fontWeight: 400,
+			fontWeight: 300,
 			fontSize: 16,
+			color: '#fff',
 		},
 	},
 	palette: {
@@ -68,6 +78,10 @@ export const theme = createTheme({
 			light: '#ed3b3b',
 			main: '#ff2424',
 			dark: '#c21f1f',
+		},
+		common: {
+			white: '#fff',
+			black: '#000',
 		},
 	},
 });
