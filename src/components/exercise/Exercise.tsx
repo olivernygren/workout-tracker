@@ -1,6 +1,6 @@
 import { Grid, Typography } from '@material-ui/core';
 
-import useStyles from './styles';
+// import useStyles from './styles';
 import { DateRangeRounded } from '@material-ui/icons';
 
 export const Exercise = () => {

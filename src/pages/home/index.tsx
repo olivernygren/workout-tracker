@@ -1,7 +1,7 @@
 import { Grid } from '@material-ui/core';
 
 import useStyles from './styles';
-import { Title, WorkoutCard } from '../../components';
+import { RestDayCard, Title, WorkoutCard } from '../../components';
 
 export const Home = () => {
 	const classes = useStyles();
@@ -24,6 +24,7 @@ export const Home = () => {
 				sets={24}
 				reps={368}
 			/>
+			<RestDayCard day="Torsdag" />
 			<WorkoutCard
 				title="Legs 2"
 				day="Fredag"
