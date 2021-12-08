@@ -15,3 +15,10 @@ button, a {
   font-family: 'Outfit', sans-serif;
   text-decoration: none;
 }
+
+button {
+  padding: .5em 1em;
+  height: fit-content;
+  border-radius: 8px;
+  box-shadow: none;
+}

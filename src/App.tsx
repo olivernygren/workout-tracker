@@ -5,12 +5,13 @@ import './index.css';
 import './App.css';
 import { routes } from './routes';
 import { theme } from './theme';
-import { Menu } from './components';
+import { Menu, HeaderBackground } from './components';
 
 function App() {
 	return (
 		<ThemeProvider theme={theme}>
 			<BrowserRouter>
+				<HeaderBackground />
 				<Routes>
 					{routes.map(({ route, element }, key) => (
 						<Route path={route} element={element} key={key} />

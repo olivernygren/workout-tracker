@@ -3,6 +3,7 @@ import { Grid, Typography } from '@material-ui/core';
 
 import useStyles from './styles';
 import { exercises } from '../../utils';
+import { Title } from '../../components';
 
 export const Workouts = () => {
 	const classes = useStyles();
@@ -11,7 +12,7 @@ export const Workouts = () => {
 	return (
 		<>
 			<Grid className={classes.container}>
-				<Typography variant="h4">Pass</Typography>
+				<Title title="Pass" />
 				<Typography variant="body1">
 					{exercise.INCLINE_DUMBBELL_PRESS.name}
 				</Typography>

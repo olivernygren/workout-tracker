@@ -7,6 +7,7 @@ export default makeStyles((theme) => ({
 		width: '100%',
 		position: 'fixed',
 		bottom: 0,
+		zIndex: 100,
 		borderRadius: '10px 10px 0 0',
 		display: 'flex',
 		justifyContent: 'space-evenly',
