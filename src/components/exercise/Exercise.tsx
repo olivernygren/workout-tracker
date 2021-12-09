@@ -1,23 +1,46 @@
 import { Grid, Typography } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
-// import useStyles from './styles';
-import { DateRangeRounded } from '@material-ui/icons';
+import useStyles from './styles';
+import { AssessmentRounded, DateRangeRounded } from '@material-ui/icons';
 
-export const Exercise = () => {
-	// const classes = useStyles();
+interface IExercise {
+	name: string;
+	sets: number;
+	repsMin: number;
+	repsMax: number;
+	tracked?: boolean;
+	path: string;
+}
+
+export const Exercise = ({
+	name,
+	sets,
+	repsMin,
+	repsMax,
+	tracked,
+	path,
+}: IExercise) => {
+	const classes = useStyles();
+	const repRange = repsMin + '-' + repsMax;
+	const setsXreps = sets + ' X ' + repRange;
+
 	return (
-		<Grid container item>
-			<Grid container item>
-				<Typography variant="h6">Incline Dumbbell Press</Typography>
-				<Grid item>
-					<DateRangeRounded />
-					<Typography variant="body1">Tisdag 7 dec</Typography>
-				</Grid>
-			</Grid>
-			<Grid container item>
-				<Typography variant="body2">6 övningar</Typography>
-				<Typography variant="body2">24 set</Typography>
-				<Typography variant="body2">368 reps</Typography>
+		<Grid container className={classes.card}>
+			<Typography variant="subtitle2" className={classes.exerciseName}>
+				{name}
+			</Typography>
+			<Grid item className={classes.info}>
+				<Typography variant="body1">{setsXreps}</Typography>
+				{tracked && (
+					<Link to={path}>
+						<AssessmentRounded
+							fontSize="large"
+							color="secondary"
+							className={classes.icon}
+						/>
+					</Link>
+				)}
 			</Grid>
 		</Grid>
 	);

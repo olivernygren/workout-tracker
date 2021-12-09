@@ -2,33 +2,42 @@ import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 
 import useStyles from './styles';
-import { exercises, program } from '../../utils';
+import { exercises, program, workouts } from '../../utils';
 import { RestDayCard, Title, WorkoutCard } from '../../components';
 
 export const Workouts = () => {
 	const classes = useStyles();
-	// const exercise = exercises.chest;
 
-	const isTrainingDay = (workout: any) => {
-		if (workout.exercises) {
+	const getWorkout = (path: string) => {
+		workouts.forEach((day) => {
+			if (day.path === path) {
+				console.log('matched ' + day.path + ' with ' + path);
+				console.log(window.location.pathname);
+			}
+		});
+	};
+
+	const getTypeOfDay = (day: any) => {
+		getWorkout(day.path);
+		if (day.exercises) {
 			return (
 				<WorkoutCard
-					title={workout.title}
-					day={workout.day}
-					path={workout.path}
-					exercises={workout.exercises}
-					sets={workout.sets}
-					reps={workout.reps}
+					title={day.title}
+					day={day.day}
+					path={day.path}
+					exercises={day.exercises}
+					sets={day.sets}
+					reps={day.reps}
 				/>
 			);
-		} else if (workout.weekIndex) {
+		} else if (day.weekIndex) {
 			return (
 				<Typography variant="h6" className={classes.weekTitle}>
-					{'vecka ' + workout.weekIndex}
+					{'vecka ' + day.weekIndex}
 				</Typography>
 			);
 		} else {
-			return <RestDayCard day={workout.day} />;
+			return <RestDayCard day={day.day} />;
 		}
 	};
 
@@ -36,7 +45,7 @@ export const Workouts = () => {
 		<>
 			<Title title="Pass" />
 			<Grid className={classes.container}>
-				{program.map((workout) => isTrainingDay(workout))}
+				{program.map((day) => getTypeOfDay(day))}
 			</Grid>
 		</>
 	);

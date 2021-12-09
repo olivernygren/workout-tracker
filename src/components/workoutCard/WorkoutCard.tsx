@@ -30,6 +30,7 @@ export const WorkoutCard = ({
 	reps,
 }: IWorkoutCard) => {
 	const classes = useStyles();
+
 	return (
 		<Grid container item className={classes.container}>
 			<Grid container item className={classes.header}>

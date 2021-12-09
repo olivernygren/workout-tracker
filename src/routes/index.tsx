@@ -1,5 +1,11 @@
-import React from 'react';
-import { Test, Home, Workouts, Tracker } from '../pages';
+import {
+	Test,
+	Home,
+	Workouts,
+	Tracker,
+	Workout,
+	ExerciseTracker,
+} from '../pages';
 
 export const routes = [
 	{
@@ -17,5 +23,13 @@ export const routes = [
 	{
 		route: '/tracker',
 		element: <Tracker />,
+	},
+	{
+		route: '/program/:week/:workout',
+		element: <Workout />,
+	},
+	{
+		route: '/exercises/:exercise',
+		element: <ExerciseTracker />,
 	},
 ];

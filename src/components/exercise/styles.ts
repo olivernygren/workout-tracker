@@ -1,13 +1,23 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
-	container: {
+	card: {
+		padding: '12px',
 		backgroundColor: theme.palette.primary.light,
-		height: 90,
-		width: '100%',
-		borderBottomRightRadius: 60,
-		position: 'absolute',
-		top: 0,
-		zIndex: 0,
+		borderRadius: 10,
+		margin: '20px 0',
+		alignItems: 'center',
+		justifyContent: 'space-between',
+	},
+	exerciseName: {
+		textTransform: 'capitalize',
+	},
+	info: {
+		display: 'flex',
+		alignItems: 'center',
+	},
+	icon: {
+		marginLeft: 8,
+		marginRight: '-4px',
 	},
 }));
