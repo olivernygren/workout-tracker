@@ -2,7 +2,7 @@ import { Grid, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 import useStyles from './styles';
-import { AssessmentRounded, DateRangeRounded } from '@material-ui/icons';
+import { AssessmentRounded } from '@material-ui/icons';
 
 interface IExercise {
 	name: string;

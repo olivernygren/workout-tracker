@@ -1,19 +1,13 @@
 import {
 	Button,
 	Checkbox,
-	FormControl,
 	FormGroup,
 	Grid,
-	TextField,
 	Typography,
 } from '@material-ui/core';
 
 import useStyles from './styles';
-import {
-	DateRangeRounded,
-	ChevronRightRounded,
-	SaveRounded,
-} from '@material-ui/icons';
+import { SaveRounded } from '@material-ui/icons';
 
 interface IExerciseTrackingCard {
 	sets: number;
@@ -105,26 +99,10 @@ export const ExerciseTrackingCard = ({ sets }: IExerciseTrackingCard) => {
 						Progress
 					</Typography>
 					<FormGroup>
-						<Checkbox
-							color="success"
-							size="small"
-							className={classes.checkbox}
-						/>
-						<Checkbox
-							color="success"
-							size="small"
-							className={classes.checkbox}
-						/>
-						<Checkbox
-							color="success"
-							size="small"
-							className={classes.checkbox}
-						/>
-						<Checkbox
-							color="success"
-							size="small"
-							className={classes.checkbox}
-						/>
+						<Checkbox size="small" className={classes.checkbox} />
+						<Checkbox size="small" className={classes.checkbox} />
+						<Checkbox size="small" className={classes.checkbox} />
+						<Checkbox size="small" className={classes.checkbox} />
 					</FormGroup>
 				</Grid>
 			</Grid>

@@ -1,11 +1,7 @@
 import { Grid } from '@material-ui/core';
 
 import useStyles from './styles';
-import {
-	ExerciseTitle,
-	ExerciseTrackingCard,
-	NavigateBack,
-} from '../../components';
+import { ExerciseTitle, ExerciseTrackingCard } from '../../components';
 import { pathToExerciseName } from '../../utils';
 
 export const ExerciseTracker = () => {

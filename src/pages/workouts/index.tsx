@@ -1,14 +1,8 @@
-import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 
 import useStyles from './styles';
-import { exercises, program, workouts } from '../../utils';
-import {
-	RestDayCard,
-	Title,
-	WorkoutCard,
-	NavigateBack,
-} from '../../components';
+import { program, workouts } from '../../utils';
+import { RestDayCard, Title, WorkoutCard } from '../../components';
 
 export const Workouts = () => {
 	const classes = useStyles();

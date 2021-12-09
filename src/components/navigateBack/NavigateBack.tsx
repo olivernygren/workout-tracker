@@ -1,4 +1,4 @@
-import { Button, IconButton } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import { ChevronLeftRounded } from '@material-ui/icons';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,13 +9,6 @@ export const NavigateBack = () => {
 	const navigate = useNavigate();
 
 	return (
-		// <Button
-		// 	startIcon={<ChevronLeftRounded className={classes.icon} />}
-		// 	onClick={() => navigate(-1)}
-		// 	className={classes.button}
-		// >
-		// 	Tillbaka
-		// </Button>
 		<IconButton onClick={() => navigate(-1)} className={classes.button}>
 			<ChevronLeftRounded fontSize="large" className={classes.icon} />
 		</IconButton>

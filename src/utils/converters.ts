@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function exerciseNameToPath(exerciseName: string) {
 	const exercisePath = exerciseName.toLowerCase().replaceAll(' ', '-');
 	const path = '/exercises/' + exercisePath;

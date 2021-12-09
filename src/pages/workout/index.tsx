@@ -1,4 +1,3 @@
-import { useParams } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 
 import useStyles from './styles';

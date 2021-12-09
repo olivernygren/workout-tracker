@@ -1,5 +1,3 @@
-import { exerciseNameToPath } from '..';
-
 export const exercises = {
 	chest: {
 		INCLINE_DUMBBELL_PRESS: {
