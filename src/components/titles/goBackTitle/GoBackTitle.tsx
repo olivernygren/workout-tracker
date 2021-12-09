@@ -3,17 +3,17 @@ import { NavigateBack } from '../../navigateBack';
 
 import useStyles from './styles';
 
-interface IExerciseTitle {
+interface IGoBackTitle {
 	title: string;
 }
 
-export const ExerciseTitle = ({ title }: IExerciseTitle) => {
+export const GoBackTitle = ({ title }: IGoBackTitle) => {
 	const classes = useStyles();
 
 	return (
 		<Grid item className={classes.container}>
 			<NavigateBack />
-			<Typography variant="h6" className={classes.title}>
+			<Typography variant="h3" className={classes.title}>
 				{title}
 			</Typography>
 		</Grid>

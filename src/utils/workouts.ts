@@ -31,6 +31,24 @@ export const workouts = [
 				tracked: false,
 				path: exerciseNameToPath(legs.SEATED_CABLE_FLY.name),
 			},
+			{
+				first: {
+					name: legs.SEATED_CABLE_FLY.name,
+					sets: 3,
+					repsMin: 10,
+					repsMax: 20,
+					tracked: false,
+					path: exerciseNameToPath(legs.SEATED_CABLE_FLY.name),
+				},
+				second: {
+					name: legs.FLAT_MACHINE_PRESS.name,
+					sets: 3,
+					repsMin: 8,
+					repsMax: 12,
+					tracked: false,
+					path: exerciseNameToPath(legs.FLAT_MACHINE_PRESS.name),
+				},
+			},
 		],
 	},
 	{

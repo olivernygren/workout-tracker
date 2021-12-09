@@ -1,48 +1,40 @@
 import { Grid, Typography } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 
 import useStyles from './styles';
-import { AssessmentRounded, DateRangeRounded } from '@material-ui/icons';
+import { Exercise } from '../../types';
 
-interface IExercise {
-	firstExerciseName: string;
-	secondExerciseName: string;
-	sets: number;
-	repsMin: number;
-	repsMax: number;
-	tracked?: boolean;
-	path: string;
+interface ISuperset {
+	firstExercise: Exercise;
+	secondExercise: Exercise;
 }
 
-export const Superset = ({
-	firstExerciseName,
-	secondExerciseName,
-	sets,
-	repsMin,
-	repsMax,
-	tracked,
-	path,
-}: IExercise) => {
+export const Superset = ({ firstExercise, secondExercise }: ISuperset) => {
 	const classes = useStyles();
-	const repRange = repsMin + '-' + repsMax;
-	const setsXreps = sets + ' X ' + repRange;
+	const firstExerciseRepRange =
+		firstExercise.repsMin + '-' + firstExercise.repsMax;
+	const secondExerciseRepRange =
+		secondExercise.repsMin + '-' + secondExercise.repsMax;
+	const firstExerciseSetsXreps =
+		firstExercise.sets + ' X ' + firstExerciseRepRange;
+	const secondExerciseSetsXreps =
+		secondExercise.sets + ' X ' + secondExerciseRepRange;
 
 	return (
 		<Grid container className={classes.card}>
-			<Grid item container>
+			<Grid item container className={classes.supersetExercise}>
 				<Typography variant="subtitle2" className={classes.exerciseName}>
-					{firstExerciseName}
+					{firstExercise.name}
 				</Typography>
 				<Grid item className={classes.info}>
-					<Typography variant="body1">{setsXreps}</Typography>
+					<Typography variant="body1">{firstExerciseSetsXreps}</Typography>
 				</Grid>
 			</Grid>
-			<Grid item container>
+			<Grid item container className={classes.supersetExercise}>
 				<Typography variant="subtitle2" className={classes.exerciseName}>
-					{secondExerciseName}
+					{secondExercise.name}
 				</Typography>
 				<Grid item className={classes.info}>
-					<Typography variant="body1">{setsXreps}</Typography>
+					<Typography variant="body1">{secondExerciseSetsXreps}</Typography>
 				</Grid>
 			</Grid>
 		</Grid>

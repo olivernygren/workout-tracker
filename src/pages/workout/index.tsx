@@ -2,14 +2,8 @@ import { useParams } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 
 import useStyles from './styles';
-import { Exercise, Title } from '../../components';
+import { Exercise, Superset, Title, GoBackTitle } from '../../components';
 import { workouts } from '../../utils';
-
-// interface IWorkout {
-// 	title: string;
-// 	path: string;
-// 	exercises: [];
-// }
 
 export const Workout = () => {
 	const classes = useStyles();
@@ -20,9 +14,14 @@ export const Workout = () => {
 	try {
 		return (
 			<Grid className={classes.container}>
-				<Title title={workout!.title} />
+				<GoBackTitle title={workout!.title} />
 				{workout!.exercises.map((exercise) => {
-					return (
+					return exercise.first ? (
+						<Superset
+							firstExercise={exercise.first}
+							secondExercise={exercise.second}
+						/>
+					) : (
 						<Exercise
 							name={exercise.name}
 							sets={exercise.sets}

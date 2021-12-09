@@ -20,4 +20,7 @@ export default makeStyles((theme) => ({
 		marginLeft: 8,
 		marginRight: '-4px',
 	},
+	supersetExercise: {
+		justifyContent: 'space-between',
+	},
 }));
