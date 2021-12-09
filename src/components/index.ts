@@ -1,4 +1,5 @@
 export * from './exercise';
+export * from './exerciseTrackingCard';
 export * from './headerBackground';
 export * from './menu';
 export * from './navigateBack';

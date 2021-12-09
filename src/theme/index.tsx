@@ -93,5 +93,8 @@ export const theme = createTheme({
 			white: '#fff',
 			black: '#000',
 		},
+		info: {
+			main: '#fff',
+		},
 	},
 });

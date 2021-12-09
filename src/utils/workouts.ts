@@ -1,6 +1,6 @@
 import { exerciseNameToPath, exercises } from '.';
 
-const legs = exercises.chest;
+const e = exercises.chest;
 
 export const workouts = [
 	{
@@ -8,45 +8,45 @@ export const workouts = [
 		path: '/program/week-1/legs-1',
 		exercises: [
 			{
-				name: legs.INCLINE_DUMBBELL_PRESS.name,
+				name: e.INCLINE_DUMBBELL_PRESS.name,
 				sets: 4,
 				repsMin: 8,
 				repsMax: 12,
 				tracked: true,
-				path: exerciseNameToPath(legs.INCLINE_DUMBBELL_PRESS.name),
+				path: exerciseNameToPath(e.INCLINE_DUMBBELL_PRESS.name),
 			},
 			{
-				name: legs.FLAT_MACHINE_PRESS.name,
+				name: e.FLAT_MACHINE_PRESS.name,
 				sets: 4,
 				repsMin: 10,
 				repsMax: 15,
 				tracked: true,
-				path: exerciseNameToPath(legs.FLAT_MACHINE_PRESS.name),
+				path: exerciseNameToPath(e.FLAT_MACHINE_PRESS.name),
 			},
 			{
-				name: legs.SEATED_CABLE_FLY.name,
+				name: e.SEATED_CABLE_FLY.name,
 				sets: 3,
 				repsMin: 10,
 				repsMax: 20,
 				tracked: false,
-				path: exerciseNameToPath(legs.SEATED_CABLE_FLY.name),
+				path: exerciseNameToPath(e.SEATED_CABLE_FLY.name),
 			},
 			{
 				first: {
-					name: legs.SEATED_CABLE_FLY.name,
+					name: e.SEATED_CABLE_FLY.name,
 					sets: 3,
 					repsMin: 10,
 					repsMax: 20,
 					tracked: false,
-					path: exerciseNameToPath(legs.SEATED_CABLE_FLY.name),
+					path: exerciseNameToPath(e.SEATED_CABLE_FLY.name),
 				},
 				second: {
-					name: legs.FLAT_MACHINE_PRESS.name,
+					name: e.FLAT_MACHINE_PRESS.name,
 					sets: 3,
 					repsMin: 8,
 					repsMax: 12,
 					tracked: false,
-					path: exerciseNameToPath(legs.FLAT_MACHINE_PRESS.name),
+					path: exerciseNameToPath(e.FLAT_MACHINE_PRESS.name),
 				},
 			},
 		],
@@ -56,28 +56,28 @@ export const workouts = [
 		path: '/program/week-1/push-1',
 		exercises: [
 			{
-				name: legs.INCLINE_DUMBBELL_PRESS.name,
+				name: e.INCLINE_DUMBBELL_PRESS.name,
 				sets: 40,
 				repsMin: 8,
 				repsMax: 12,
 				tracked: true,
-				path: exerciseNameToPath(legs.INCLINE_DUMBBELL_PRESS.name),
+				path: exerciseNameToPath(e.INCLINE_DUMBBELL_PRESS.name),
 			},
 			{
-				name: legs.FLAT_MACHINE_PRESS.name,
+				name: e.FLAT_MACHINE_PRESS.name,
 				sets: 4,
 				repsMin: 10,
 				repsMax: 15,
 				tracked: true,
-				path: exerciseNameToPath(legs.FLAT_MACHINE_PRESS.name),
+				path: exerciseNameToPath(e.FLAT_MACHINE_PRESS.name),
 			},
 			{
-				name: legs.SEATED_CABLE_FLY.name,
+				name: e.SEATED_CABLE_FLY.name,
 				sets: 3,
 				repsMin: 10,
 				repsMax: 20,
 				tracked: false,
-				path: exerciseNameToPath(legs.SEATED_CABLE_FLY.name),
+				path: exerciseNameToPath(e.SEATED_CABLE_FLY.name),
 			},
 		],
 	},
