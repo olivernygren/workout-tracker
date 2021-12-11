@@ -40,18 +40,6 @@ export const ExerciseTrackingCard = ({ sets }: IExerciseTrackingCard) => {
 							</Typography>
 						);
 					})}
-					{/* <Typography variant="body2" className={classes.prefix}>
-						1
-					</Typography>
-					<Typography variant="body2" className={classes.prefix}>
-						2
-					</Typography>
-					<Typography variant="body2" className={classes.prefix}>
-						3
-					</Typography>
-					<Typography variant="body2" className={classes.prefix}>
-						4
-					</Typography> */}
 				</Grid>
 				<Grid container item direction="column" className={classes.column}>
 					<Typography variant="subtitle1" className={classes.columnTitle}>
@@ -67,30 +55,6 @@ export const ExerciseTrackingCard = ({ sets }: IExerciseTrackingCard) => {
 							</Grid>
 						);
 					})}
-					{/* <Grid item className={classes.data}>
-						<input className={classes.input} />
-						<Typography variant="body2" className={classes.prefix}>
-							reps
-						</Typography>
-					</Grid>
-					<Grid item className={classes.data}>
-						<input className={classes.input} />
-						<Typography variant="body2" className={classes.prefix}>
-							reps
-						</Typography>
-					</Grid>
-					<Grid item className={classes.data}>
-						<input className={classes.input} />
-						<Typography variant="body2" className={classes.prefix}>
-							reps
-						</Typography>
-					</Grid>
-					<Grid item className={classes.data}>
-						<input className={classes.input} />
-						<Typography variant="body2" className={classes.prefix}>
-							reps
-						</Typography>
-					</Grid> */}
 				</Grid>
 				<Grid container item direction="column" className={classes.column}>
 					<Typography variant="subtitle1" className={classes.columnTitle}>
@@ -106,30 +70,6 @@ export const ExerciseTrackingCard = ({ sets }: IExerciseTrackingCard) => {
 							</Grid>
 						);
 					})}
-					{/* <Grid item className={classes.data}>
-						<input className={classes.input} />
-						<Typography variant="body2" className={classes.prefix}>
-							kg
-						</Typography>
-					</Grid>
-					<Grid item className={classes.data}>
-						<input className={classes.input} />
-						<Typography variant="body2" className={classes.prefix}>
-							kg
-						</Typography>
-					</Grid>
-					<Grid item className={classes.data}>
-						<input className={classes.input} />
-						<Typography variant="body2" className={classes.prefix}>
-							kg
-						</Typography>
-					</Grid>
-					<Grid item className={classes.data}>
-						<input className={classes.input} />
-						<Typography variant="body2" className={classes.prefix}>
-							kg
-						</Typography>
-					</Grid> */}
 				</Grid>
 				<Grid container item direction="column" className={classes.column}>
 					<Typography variant="subtitle1" className={classes.columnTitle}>
@@ -139,10 +79,6 @@ export const ExerciseTrackingCard = ({ sets }: IExerciseTrackingCard) => {
 						{array.map((set) => {
 							return <Checkbox size="small" className={classes.checkbox} />;
 						})}
-						{/* <Checkbox size="small" className={classes.checkbox} />
-						<Checkbox size="small" className={classes.checkbox} />
-						<Checkbox size="small" className={classes.checkbox} />
-						<Checkbox size="small" className={classes.checkbox} /> */}
 					</FormGroup>
 				</Grid>
 			</Grid>
