@@ -14,7 +14,7 @@ export const ExerciseTracker = () => {
 	return (
 		<Grid className={classes.container}>
 			<ExerciseTitle title={exerciseName} />
-			<ExerciseTrackingCard sets={4} />
+			<ExerciseTrackingCard sets={5} />
 		</Grid>
 	);
 };

@@ -1,30 +1,20 @@
 import { Grid, Typography } from '@material-ui/core';
 
 import useStyles from './styles';
-import { program, workouts } from '../../utils';
+import { program } from '../../utils';
 import { RestDayCard, Title, WorkoutCard } from '../../components';
 
 export const Workouts = () => {
 	const classes = useStyles();
 
-	const getWorkout = (path: string) => {
-		workouts.forEach((day) => {
-			if (day.path === path) {
-				console.log('matched ' + day.path + ' with ' + path);
-				console.log(window.location.pathname);
-			}
-		});
-	};
-
 	const getTypeOfDay = (day: any) => {
-		getWorkout(day.path);
 		if (day.exercises) {
 			return (
 				<WorkoutCard
 					title={day.title}
 					day={day.day}
 					path={day.path}
-					exercises={day.exercises}
+					exercises={day.exercises.length}
 					sets={day.sets}
 					reps={day.reps}
 				/>

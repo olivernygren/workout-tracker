@@ -4,7 +4,7 @@ import { NavigateBack } from '../../navigateBack';
 import useStyles from './styles';
 
 interface IGoBackTitle {
-	title: string;
+	title: string | undefined;
 }
 
 export const GoBackTitle = ({ title }: IGoBackTitle) => {

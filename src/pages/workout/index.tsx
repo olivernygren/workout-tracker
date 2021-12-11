@@ -2,19 +2,18 @@ import { Grid } from '@material-ui/core';
 
 import useStyles from './styles';
 import { Exercise, Superset, Title, GoBackTitle } from '../../components';
-import { workouts } from '../../utils';
+import { program } from '../../utils';
 
 export const Workout = () => {
 	const classes = useStyles();
 	const path = window.location.pathname;
-	const workout = workouts!.find((workout) => path === workout.path);
-	console.log(workout);
+	const workout = program.find((workout) => path === workout?.path);
 
 	try {
 		return (
 			<Grid className={classes.container}>
 				<GoBackTitle title={workout!.title} />
-				{workout!.exercises.map((exercise) => {
+				{workout!.exercises!.map((exercise) => {
 					return exercise.first ? (
 						<Superset
 							firstExercise={exercise.first}
@@ -40,10 +39,4 @@ export const Workout = () => {
 			</Grid>
 		);
 	}
-
-	// if (workout) {
-	// }
-
-	// if (workout === undefined || workout === null) {
-	// }
 };
